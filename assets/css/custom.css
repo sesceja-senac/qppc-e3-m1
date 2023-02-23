@@ -513,7 +513,7 @@ h2 {
 .bloco1-pg1 > .container{
     padding-top: 60px;
     padding-bottom: 100px;
-    background-color: transparent;
+    background: rgba(255, 255, 255, 0.7);
 }
 .bloco1-pg2{
     padding-top: 60px;
@@ -543,6 +543,7 @@ h2 {
     /* background-image: url('../../img/pg2/bg-branco.png'); */
     /* background-attachment: fixed; */
 }
+.bloco3-pg3 .caixa {background: #5da5b1;}
 .bloco1-pg4, .bloco1-pg5, .bloco2-pg3{
     position: relative;
     padding-top: 100px;
@@ -682,6 +683,9 @@ div.bloco4-pg3 > div.container{
     height: 442px;
     background-image: url('../../img/pg2/slider.png');
 	animation: drift 50s linear infinite;
+}
+.sliderInfinito:hover{
+    animation-play-state: paused;
 }
 @keyframes drift {
 	from {
