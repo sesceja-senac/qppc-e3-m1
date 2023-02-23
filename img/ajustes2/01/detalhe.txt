@@ -1,0 +1,1 @@
+fundo do texto: 70% #FFFFFF
