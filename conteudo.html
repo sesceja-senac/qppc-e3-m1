@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Produtor Cultural</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/fa/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/template.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/lt-estilos.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    
+    <!-- <link rel="stylesheet" href="drag/js/dragula.css">
+    <link rel="stylesheet" href="drag/css/game-custom.css"> -->
+    <link rel="stylesheet" href="assets/print/print.css">
+</head>
+
+<body class="bg-sesc">
+    <div class="preloader">
+        <div class="anim"></div>
+        <h1>Aguarde enquanto o conteúdo é carregado.</h1>
+    </div>
+    <!-- MARCA D´ÁGUA -->
+    <img src="assets/img/logo_sesc_horizontal.svg" id="marcadaguaLogo">
+
+    <header id="topo" class="sesc no-print">
+        <img src="assets/img/cabecalho/cabecalho.png" class="d-none d-lg-block img-fluid" alt="">
+    </header>
+    <!-- Section principal deve ter o booklet, pois faz parte do print.js -->
+    <section id="booklet">
+        <!--Dentro do section devemos ter um elemento com a classe paginas, para funcionar a paginação/print-->
+        <header class="titulo-conteudo mb-0 print">
+            
+            <div class="container" style="padding-top:1px">
+                <!--titulo do curso para o print e leitor de tela-->
+                <h1 id="nome-curso" class="d-none print mt-0 text-center w-100">Linguagens e suas tecnologias
+                </h1>
+                <div class="row g-0 pb-4 pt-4">
+                    <div class="col-9 d-flex flex-column justify-content-center align-items-start">
+                    <div class="menu_hamburguinho" >
+                          <button class="btn" type="button" id="bt_menu_hamburguinho" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <img src="img/pg1/menu_hamburguinho.png" alt="">
+                          </button>
+                          
+                          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="list-group">
+                                  <li class="list-group-item"><a href="conteudo.html?page=1">Introdução</a></li>
+                                  <li class="list-group-item"><a href="conteudo.html?page=2">Olhando para trás</a></li>
+                                  <li class="list-group-item"><a href="conteudo.html?page=3">Olhando para frente</a></li>
+                                  <li class="list-group-item"><a href="conteudo.html?page=4">Estágio simulado</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                    </div>
+                       
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-end align-items-end">
+                        <button data-pdf="true" name="button" class="bt-print bto-imprimir no-print"><i
+                                class="fas fa-print "></i> imprimir</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="paginas">
+                      <!-- PG1 -->
+                    <div class="pagina">
+                        <!-- <img src="img/pg1/img-esq.png" class="no-print rellax-esquerda-big relax-top1" data-rellax-speed="4">
+                        <img src="img/pg1/ilustra_2.png" class="no-print rellax-direita-big relax-top1" data-rellax-speed="4"> -->
+
+                        <div class="bloco1-pg1">
+                            
+                            <div class="container">
+                                <h1 class="only-print">Olhar para trás e para a frente ao mesmo tempo: uma introdução à terceira etapa</h1>
+                                <h2>Sobre o caminho até aqui e o caminho daqui para a frente </h2>
+                                <p>O poeta espanhol Antonio Machado escreveu, há mais de 100 anos, um pequeno poema: </p>
+                                <div class="row">
+                                    <div class="col"><img src="img/pg1/citacao.png"  class="img-fluid d-block m-auto" data-aos="zoom-in"  alt=""> </div>
+                                    <!-- <div class="col"></div> -->
+                                </div>
+                                <br>
+                                <p>Agora, à beira da terceira etapa do curso, estamos nos vendo na situação do caminhante do poema: já trilhamos uma parte do nosso caminho, navegando pelos mares da cultura brasileira, ao longo da primeira etapa, costurando conhecimentos com linhas de memória, na segunda, e, agora, olhando para trás, podemos perceber, com orgulho, quanto avançamos.  </p>
+                            </div>
+                            <div class="container">
+                                <div class="row vamosFazer2">
+                                    <div class="col-4">
+                                        <img src="img/pg1/ilustra_1.png" class="img-fluid d-block m-auto vamosFazerImg" data-aos="zoom-in"  alt="">
+                                    </div>
+                                    <div class="col-8 vamosFazer">
+                                        <h6>Vamos fazer um exercício?</h6>
+                                        <p>
+                                            Pare por um instante e faça uma respiração profunda e consciente. Agora, procure lembrar desse caminho, desde que você começou no curso até aqui e agora. Como você mudou? Como seu entendimento sobre a cultura e sobre a produção cultural mudou?  
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p>
+                                            Essas são nossas pegadas. Esse é o caminho que percorremos juntos. 
+                                        </p>
+                                        <p>
+                                            Imagine-se, agora, pronto para ir em direção ao futuro! À nossa frente, está o caminho que ainda trilharemos, lado a lado. 
+                                        </p>
+                                        <p>Vamos em frente! </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="img/pg1/ilustra_2.png"  class="img-fluid d-block m-auto img-ilustra2" data-aos="zoom-in"  alt="">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIM PG1 -->
+                    <!-- PG2 -->
+                    <div class="pagina">
+                        <div class="bloco1-pg2">
+                            <!-- <img src="img/pg2/img1-esq.png" class="no-print rellax-esquerda-big relax-top1" data-rellax-speed="4">
+                            <img src="img/pg2/img2-dir.png" class="no-print relax-top9 rellax-direita-big  " data-rellax-speed="4"> -->
+
+                            <div class="container">
+                                <h2>Olhando para trás: um sobrevoo por pontos anteriormente vistos </h2>
+                            </div>
+                            <div class="sliderInfinito">
+
+                            </div>
+                                
+                            <div class="container">
+                                <br>
+                                <h5>
+                                    Calma! Antes de seguirmos, que tal retomar os principais conceitos que desenvolvemos em nossa trajetória até aqui? 
+                                </h5>
+                                <br>
+                                <img src="img/pg2/pipa_1.png" class="img-pipa01 d-none d-sm-block no-print">
+                                <video src="" class="video">
+                                </video>
+                                <br>
+                                <p>
+                                    Assim, preparamos um <i>quiz</i> bem divertido para fixar conhecimentos, recapitular perspectivas e reformular pensamentos em relação às etapas anteriores. Se você tiver qualquer dúvida sobre as questões do <i>quiz</i>, pode nos chamar lá no <strong>Fórum de Mentoria!</strong> 
+                                </p>
+                                <p>
+                                    Então, vamos lá? Agora é com você! 
+                                </p>
+                                <img src="img/pg2/pipa_2.png" class="img-pipa02 d-none d-sm-block no-print">
+
+                                <!-- OBJETO -->
+                                <a href="objeto/index.html" target="_blank" class="bt_quiz"></a>
+
+                                <br><br>
+                                <div class="caixa icone white importante cxmedia  d-block m-auto" data-aos="zoom-in" style="">
+                                    <h4 class="visually-hidden print">Importante!</h4>
+                                    <p>O restante do módulo aparecerá depois que você concluir o <i>quiz</i>. </p>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="bloco2-pg2">
+                            <!-- <img src="img/pg2/img3-esq.png" class="no-print  rellax-esquerda-big relax-bottom1" data-rellax-speed="4"> -->
+                            <img src="img/pg2/divisoria.png" class="bloco-divisoria no-print" alt="">
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4"><img src="img/pg2/ilustra_1.png"  class="img-fluid d-block m-auto" data-aos="zoom-in"  alt=""> </div>
+                                    <div class="col-8 mgTop">
+                                        <p>Muito bem! Você está com os principais conceitos da primeira e da segunda etapa fresquinhos!  </p>
+                                    </div>
+                                </div>
+                                <div class="caixa caixaBgDark2">
+                                    <p>Relembrando: na primeira etapa, entendemos que a cultura e a criatividade são produtos da convivência em comunidade e são a fonte de ideias inovadoras. Na segunda etapa, entendemos como organizar as nossas ideias em projetos culturais.</p>
+                                </div>
+                                <p>Então, nesta terceira etapa, compreenderemos como o projeto retorna para a comunidade por meio da sua execução, adicionando à nossa caixinha mais ferramentas que contribuem para que esse retorno à comunidade seja o mais relevante, organizado, sustentável e transparente possível. </p>
+                                <figure class="img-esquema">
+                                    <img src="img/pg2/esquema.png" class="img-fluid d-block m-auto" data-aos="zoom-in" alt="Primeira etapa: cultura e território. A experiência comunitária com fonte de ideias. Segunda etapa: elaboração de projetos culturais. Ferramentas para transformar a ideia em projeto. Terceira etapa: a execução do projeto. O retorno da ideia, transformada em projeto, para a comunidade. ">
+                                    <figcaption></figcaption>
+                                </figure>
+                                <!--
+                                <div class="row justify-content-end cxmedia">
+                                    <div class="col-4 align-self-center">
+                                        <h6>Vamos em frente? </h6>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="img/pg2/ilustra_2.png" alt="">
+                                    </div>
+                                </div>
+                                -->
+                                <img src="img/pg2/bt-avancar.png" class="img-fluid d-block m-auto">
+                                <br>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <!-- FIM PG2 -->
+        
+                    <!-- PG3 -->
+                    <div class="pagina">
+                        <div class="bloco1-pg3">
+ 
+                            <img src="img/pg3/ilustra_2.png" class="no-print rellax relax-top2" data-rellax-speed="4">
+                            <!-- <img src="img/pg3/ilustra_1.png" class="no-print relax-top9 rellax-direita " data-rellax-speed="4"> -->
+                            <!-- <img src="img/pg2/img6-esq.png" class="no-print rellax-esquerda-big relax-top25" data-rellax-speed="4"> -->
+                            <div class="container"> 
+                                <h2>Olhando para a frente: apresentação da terceira etapa </h2>
+                                <video src="" class="video"></video>
+                                <br>
+                                <p>
+                                    Já vimos que o foco desta terceira etapa do curso será a execução de projetos culturais, ou seja, o retorno da ideia, transformada em projeto cultural para a comunidade. Agora, veremos quais serão os módulos de aprendizagem, o número de propostas de atividades e os indicadores (critérios) de avaliação desta etapa.  
+                                </p>
+                                <div class="caixa icone seLiga" data-aos="zoom-in">
+                                    <h4 class="visually-hidden print">Se liga!</h4>
+                                    <p>Uma rápida observação: </p>
+                                    <p>Querido estudante, você está percebendo uma certa semelhança entre o que estamos fazendo aqui e o conteúdo de <b>Elaboração de projetos</b> da segunda etapa? Pois não é uma coincidência. Veja: estamos definindo um objeto (a execução de projetos culturais) e dizendo o “o quê?” e “como?” (módulos de aprendizagem, atividades, indicadores).  </p>
+                                </div>
+                                <p>
+                                    O filósofo grego Heráclito disse, muito tempo atrás (bastante mesmo, coisa de 2.500 anos atrás), algo como: uma pessoa nunca pode se banhar duas vezes no mesmo rio; isso porque o rio corre e suas águas se transformam o tempo todo. O rio nunca é o mesmo, mas, também, porque a pessoa se transforma o tempo todo e nunca é a mesma.  
+                                </p>
+                                <p>Você pode estar se perguntando: que história é essa de filósofo grego, justo agora?  </p>
+                                <!--
+                                <figure>
+                                    <img src="img/pg3/citacao.png" class="img-fluid d-block m-auto" data-aos="zoom-in" alt="">
+                                </figure>
+                                -->
+                                <div class="row">
+                                    <div class="col-sm-4 col-xs-12">
+                                        <img src="img/pg3/borboleta.gif" class="img-fluid d-block m-auto">
+                                    </div>
+                                    <div class="col-sm-8 col-xs-12">
+                                        <p class="paragrafo-gif">Calma. É que esta terceira etapa é sobre <b>transformação</b>.</p>
+                                    </div>
+                                </div>
+                                
+                               
+
+                                <p>
+                                    Esta terceira etapa é uma viagem de retorno, como já dissemos, mas quem volta de uma viagem volta transformado, não é verdade? Conhecer o mundo e as coisas do mundo nos dá uma dimensão diferente da vida e de nós mesmos.  
+                                </p>
+                                
+                                <div class="row">
+                                    <div class="col"><img src="img/pg3/ilustra_destaque.png"  class="img-fluid d-block m-auto" data-aos="zoom-in"  alt=""> </div>
+                                    <div class="col align-self-center">
+                                        <p>Voltaremos, então, voando. Não de avião, que é muito rápido, e sim voando como uma pipa (ou pandorga, papagaio, raia, lebreque, morcego, curica e tantos outros nomes, dependendo de onde é a casa para onde você está voltando), tranquila ao sabor do vento.  </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="bloco2-pg3">
+                            <img src="img/pg3/ilustra_3.png" class="no-print relax-top1 rellax-direita-big" data-rellax-speed="4">
+                            <img src="img/pg3/ilustra_4.png" class="no-print rellax-esquerda-big relax-top5" data-rellax-speed="4">
+
+                            <div class="container">
+                                <h4>Lá na frente: o que queremos desenvolver</h4>
+                                <p>
+                                    Ao longo desta terceira etapa, conheceremos em detalhes o processo de execução do projeto cultural (que aprendemos a elaborar na segunda etapa), buscando aproximar, ao máximo, o conhecimento da prática da produção cultural. 
+                                </p>
+                                <p>Em resumo, o que trabalharemos para desenvolver ao longo desta etapa é: </p>
+                                <figure>
+                                    <img src="img/pg3/infografico.png" class="img-fluid d-block m-auto" data-aos="zoom-in" alt="Possibilitar que você analise e adapte o orçamento para a execução de um projeto (os recursos disponíveis e sua destinação), considerando a equipe, os materiais a serem comprados e outras necessidades. 
+
+                                    Fazer com que você entenda como realizar a prestação de contas de todas as etapas do projeto, com base em exigências legais e especificidades da modalidade de fomento. 
+                                    
+                                    Fazer com que você consiga elaborar e organizar o cronograma de execução de um projeto cultural, seguindo o seu planejamento. 
+                                    
+                                    Possibilitar que você crie ações de marketing e comunicação de acordo com o produto cultural e o público-alvo do projeto. 
+                                    
+                                    E, por fim, com a soma dos itens anteriores, fazer com que você tenha condições de executar um projeto cultural seguindo o planejamento estabelecido (cronograma, ações de comunicação e orçamento). ">
+                                </figure>
+                                <p>
+                                    Parece muita coisa, nós sabemos. Mas não se preocupe, nós temos um plano: um mapa de voo!  
+                                </p>
+                            </div>
+                            <img src="img/pg3/pipa.png" class="no-print img-pipa d-none d-sm-block" data-rellax-speed="4">
+                        </div>
+                        <div class="bloco3-pg3">
+                            <img src="img/pg3/ilustra_5.png" class="no-print img-ilustra_5 d-none d-sm-block" data-rellax-speed="4">
+                            
+                            <div class="container">
+                                <br>
+                                <h4>O mapa de voo</h4>
+                                <p>
+                                    Para que possamos trilhar esse caminho de desenvolvimento, precisaremos, em nosso voo, passar por alguns pontos específicos, marcados, desde já, em nosso mapa.  
+                                </p>
+                                <br><br>
+                                <div class="mapa_voo">
+                                    <div class="pin pin1" data-bs-toggle="modal" data-bs-target="#mapaModal1"></div>
+                                    <div class="pin pin2" data-bs-toggle="modal" data-bs-target="#mapaModal2"></div>
+                                    <div class="pin pin3" data-bs-toggle="modal" data-bs-target="#mapaModal3"></div>
+                                    <div class="pin pin4" data-bs-toggle="modal" data-bs-target="#mapaModal4"></div>
+                                </div>
+                                <div class="modal fade" id="mapaModal1" tabindex="-1"
+                                    aria-labelledby="mapaModal1Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="mapaModal1Label"></h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3>Primeiro ponto</h3>
+                                                <p>O <b>primeiro ponto</b> são os conhecimentos abordados durante todo o processo da terceira etapa: </p>
+                                                <div class="row">
+                                                    <div class="col-2"><img src="img/pg3/modal1_ico_logistica.png" alt=""></div>
+                                                    <div class="col-10">
+                                                        <h5>Logística </h5>
+                                                        <p>Organização e operacionalização: logística (aplicação na área de eventos culturais), ocupação de espaços culturais (montagem e desmontagem de palco, camarins e afins), equipamentos e materiais (<i>checklist</i>, cronogramas de montagem – som, luz e cenário, planta baixa, aluguéis e contratos) e acompanhamento das atividades. </p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-2"><img src="img/pg3/modal1_ico_equipes.png" alt=""></div>
+                                                    <div class="col-10">
+                                                        <h5>Equipes de trabalho  </h5>
+                                                        <p>Dimensionamento da equipe do projeto, acordos, contratos, entre outros, fornecedores (tipos, critérios de contratação e formas de contrato de eventos culturais), acompanhamento de ensaios, contatos e <i>networking</i> (rede de contatos). </p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-2"><img src="img/pg3/modal1_ico_legislacao.png" alt=""></div>
+                                                    <div class="col-10">
+                                                        <h5>Legislação para o mercado de eventos culturais </h5>
+                                                        <p>Leis locais, Escritório Central de Arrecadação e Distribuição (ECAD), seguro de responsabilidade civil, anotação de responsabilidade técnica (ART), vistoria técnica (VT), Lei Antifumo, Lei Seca, Lei da Meia-Entrada, Lei de Acessibilidade e normas de sustentabilidade. </p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-2"><img src="img/pg3/modal1_ico_divulgacao.png" alt=""></div>
+                                                    <div class="col-10">
+                                                        <h5>Divulgação de produtos culturais </h5>
+                                                        <p>Mídias <i>on-line</i> (<i>sites</i>, <i>blogs</i>, páginas de venda, <i>e-mail marketing</i>, redes sociais etc.), mídias <i>offline</i> (impressos, jornais, TV, <i>outdoor, busdoor</i> etc.) e ações promocionais (<i>live marketing</i> etc.). </p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-2"><img src="img/pg3/modal1_ico_etapas.png" alt=""></div>
+                                                    <div class="col-10">
+                                                        <h5>Etapas da produção de eventos </h5>
+                                                        <p>Concepção, pré-evento, dia do evento e pós-evento. </p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-2"><img src="img/pg3/modal1_ico_ferramentas.png" alt=""></div>
+                                                    <div class="col-10">
+                                                        <h5>Ferramentas de planejamento e acompanhamento (<i>checklist</i> e cronograma) </h5>
+                                                        <p>Função, itens, formato e distribuição para as equipes envolvidas. </p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-2"><img src="img/pg3/modal1_ico_prestacao.png" alt=""></div>
+                                                    <div class="col-10">
+                                                        <h5>Prestação de contas  </h5>
+                                                        <p>Elaboração de relatório, balanço financeiro, clipping e exigências legais. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="mapaModal2" tabindex="-1"
+                                    aria-labelledby="mapaModal2Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="mapaModal2Label"></h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3>Segundo ponto</h3>
+                                                <p>O <b>segundo ponto</b> do nosso mapa é a divisão dos conhecimentos apresentados anteriormente em quatro módulos de aprendizagem (além deste primeiro módulo de introdução), que serão apresentados na seguinte ordem:</p>
+                                                <div class="painel-abas">
+                                                    <nav>
+                                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                          <img src="img/pg3/modal2_mod1.png" class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                                                          <img src="img/pg3/modal2_mod2.png" class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                                          <img src="img/pg3/modal2_mod3.png" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                                          <img src="img/pg3/modal2_mod4.png" class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">
+                                                        </div>
+                                                      </nav>
+                                                      <div class="tab-content" id="nav-tabContent">
+                                                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                                                            <h3>Executando um projeto cultural – da organização ao acompanhamento </h3>
+                                                            <p>
+                                                                Aspectos logísticos ligados à execução de projetos culturais; execução de orçamento (e suas possíveis adaptações); equipes, fornecedores, materiais (contratação, compras, transportes) para eventos/atividades culturais; modelos de contrato, acordos e declarações; acompanhamento da execução (<i>checklist</i> de atividades); legislações específicas relativas a eventos culturais. 
+                                                            </p>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                                            <h3>Desafios para divulgação – da realização de campanhas à fidelização de plateia</h3>
+                                                            <p>
+                                                                Execução do plano de divulgação (acompanhamento e assessoria de imprensa); criação de arte gráfica, possibilidades em vídeo e campanhas digitais; parcerias para vincular material de divulgação; <i>social media</i> e redes sociais; mídias tradicionais (jornais, TVs e rádios), mídias digitais (<i>sites</i>, <i>ads</i> e <i>influencers</i>), rua (panfletagem, <i>outdoors</i>, <i>busdoors</i>, lambe-lambe e ações) e boca a boca (“amigo indica aí”); pós-comunicação – serviço de atendimento ao cliente, conhecido como SAC (manter vínculo, pesquisa de satisfação). 
+
+                                                            </p>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                                                            <h3>Prestação de contas – transparência do projeto cultural </h3>
+                                                            <p>Prestação de contas de projetos culturais, para além de relatórios financeiros/contábeis; relatório de visual de atividades do projeto (<i>clipping</i>); registros de realização e impacto social/econômico; relatório financeiro. </p>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+                                                            <h3>A produção cultural e o mundo do trabalho  </h3>
+                                                            <p>
+                                                                Oportunidades de trabalho para o produtor cultural; elaboração de currículo; o que fazer em uma entrevista de trabalho; formalização para produtores <i>freelancers</i> (microempreendedor individual, conhecido como MEI, e microempresas, conhecidas como ME). 
+                                                            </p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="caixa icone seLiga" data-aos="zoom-in">
+                                                          <h4 class="visually-hidden print">Se liga!</h4>
+                                                            <p>Lembre-se sempre de marcar cada módulo como estudado ao terminar sua leitura. Isso ajuda você a organizar seus estudos e é fundamental para ter acesso às atividades. </p>
+                                                     </div>
+
+                                                </div>
+                                                <!-- <h3></h3>
+                                                <p></p>
+                                                <div class="row">
+                                                    <div class="col-2"><img src="img/pg3/modal1_ico_logistica.png" alt=""></div>
+                                                    <div class="col-10">
+                                                        <h5></h5>
+                                                        <p></p>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="mapaModal3" tabindex="-1"
+                                    aria-labelledby="mapaModal3Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="mapaModal3Label"></h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3>Terceiro ponto</h3>
+                                                <p>Temos, ainda, um <b>terceiro ponto</b>: há dois fóruns permanentes em que poderemos trocar ideias, tirar dúvidas e ampliar nossos conhecimentos sobre cultura e produção cultural. Nunca é demais reforçar que a sua participação nesses fóruns é muito importante! </p>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <img src="img/pg3/modal3_card1.png" class="img-fluid d-block m-auto">
+                                                    </div>
+                                                    <div class="col">
+                                                        <img src="img/pg3/modal3_card2.png" class="img-fluid d-block m-auto">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="mapaModal4" tabindex="-1"
+                                    aria-labelledby="mapaModal4Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="mapaModal4Label"></h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3>Quarto ponto</h3>
+                                                <p>Por fim, o <b>quarto ponto</b> é relativo à atividade avaliativa, mas falaremos sobre isso em seguida. </p>
+                                                <div class="caixa" data-aos="zoom-in">
+                                                    <p>E aí, o que achou do nosso mapa de viagem?</p>
+                                                    <p>Esperamos que você tenha ficado tão empolgado quanto nós com a proposta dos conhecimentos desta terceira etapa. Aliás, que tal compartilhar com os colegas e os professores suas expectativas?</p>
+                                                    <p>Corra lá no <b>Fórum Ponto de Cultura</b> e mande o seu recado! </p>
+                                                </div>
+                                                <br>
+                                                <p>Até aqui, como você pôde ver, a terceira etapa está bem parecida com as anteriores, não é verdade? Temos os conhecimentos organizados em módulos de aprendizagem e temos os fóruns. Mas temos uma surpresa para você no que se refere às atividades! Fique tranquilo, pois é uma surpresa boa. Temos certeza de que você gostará!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="img/pg3/ilustra_6.png" class="no-print img-ilustra_6 d-none d-sm-block" data-rellax-speed="4">
+                        </div>
+
+                    </div>
+                    
+                    <!-- FIM PG3 -->
+        
+                    <!-- PG4 -->
+                    <div class="pagina">
+                        <div class="bloco1-pg4">
+                            <!--<img src="img/pg4/img1-dir.png" class="no-print relax-top1 rellax-direita-big" data-rellax-speed="4">-->
+                            <img src="img/pg4/img2-esq.png" class="no-print rellax-esquerda-big relax-top15" data-rellax-speed="4">
+                            <div class="container">
+                                <h2>Estágio simulado em produção cultural </h2>
+                                <p>Como estamos em um processo de aproximar cada vez mais os conhecimentos da prática da produção cultural, as atividades desta terceira etapa do curso serão contextualizadas em...  <b>um estágio simulado em produção cultural</b>!</p>
+                                
+                                <div class="img-postit d-block m-auto">
+                                    <img src="img/pg4/postit2.png" class="img-fluid" data-aos="zoom-in" alt="">
+                                    <div>
+                                        <br>
+                                        <p>Esse estágio será realizado em <b>grupos de até cinco alunos</b>!</p>
+                                    </div>
+                                </div>
+
+                                <br><br>
+                                <p>Esses grupos serão formados logo no começo da etapa e trabalharão juntos ao longo de toda ela.</p>
+                                <br>
+
+                                <div class="caixa icone white importante d-block m-auto" data-aos="zoom-in" style="">
+                                    <h4 class="visually-hidden print">Importante!</h4>
+                                    <p>A formação dos grupos ficará a cargo dos alunos. Então, você precisará conversar com os colegas e informar aos professores.   </p>
+                                </div>
+                                <br>
+
+                                <p>
+                                    Lembra da Mirella? Pois então, agora ela abriu uma empresa de produção cultural, chamada NO CORRE Produções Culturais, e está realizando uma série de projetos ao mesmo tempo. Você fará parte de um grupo de estagiários que entrou nessa empresa e terá de escolher um desses projetos para trabalhar (o grupo todo trabalha no mesmo projeto).  
+                                </p>
+                                <p>Os projetos são os seguintes: </p>
+                                <img src="img/pg4/infografico.png" class="img-fluid d-block m-auto" data-aos="zoom-in" alt="">
+                                <br><br>
+                            </div>
+                        </div>
+                        <div class="bloco2-pg4">
+                            <img src="img/pg4/bandeira_direita.png" class="no-print rellax relax-top15 rellax-direita " data-rellax-speed="4">
+                            <img src="img/pg4/bandeira_esquerda.png" class="no-print rellax-esquerda-big relax-top15" data-rellax-speed="4" style="width: 250px;">
+                            
+                            <div class="container">
+                                <br><br><br>
+                                <p>
+                                    Como os projetos já estão em desenvolvimento, toda a etapa de pré-produção já foi realizada, ou seja, o projeto já foi planejado e elaborado e os recursos para a sua realização já estão disponíveis.  
+                                </p>
+                                <div class="img-postit d-block m-auto">
+                                    <img src="img/pg4/postit2.png" class="img-fluid" data-aos="zoom-in" alt="">
+                                    <div>
+                                        <p>Então, o que os estagiários farão?</p>
+                                        <p>Executar o projeto escolhido!</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>
+                                    Claro que essa execução será simulada, mas a ideia é que seja o mais próximo da prática possível. Então, como acontecerá essa execução?  
+                                </p>
+                                <p>
+                                    Haverá três entregas, que serão feitas nos fóruns. Chamaremos essas entregas de “partes”, ou seja, serão três partes: 
+                                </p>
+                                <!--  -->
+                                
+                                <div class="painel-abas">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Parte 1</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Parte 2</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Parte 3</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                            <p>
+                                                Cronograma de execução das atividades do projeto + <i>checklist</i> de acompanhamento das atividades. 
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                            <p><i>Release</i> do projeto + um item de divulgação (exemplo: cartaz, <i>card</i> para redes sociais, vídeo promocional para redes sociais, <i>spot</i> de áudio etc.). </p>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                            <p>
+                                                Relatório de execução das atividades. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <p>Cada uma dessas <b>partes</b> será desenvolvida no <b>Fórum de Mentoria</b> do grupo (cada grupo terá o próprio fórum) com o acompanhamento (dicas, sugestões e auxílio em dúvidas) do professor. Teremos, ainda, um cronograma de entrega dessas <b>partes</b> ao longo do semestre.  </p>
+                                <p>
+                                    Uma vez que o seu grupo de estagiários tenha completado as entregas das três partes no <b>Fórum de Mentoria</b>, vocês poderão fazer a entrega da <b>atividade avaliativa do estágio simulado</b>, que consistirá em juntar todas as entregas anteriores em um único arquivo e enviar no ambiente virtual de aprendizagem (AVA). 
+                                </p>
+                                <br>
+                                <img src="img/pg4/esquema.png" class="img-fluid d-block m-auto" data-aos="zoom-in" alt="">
+                                <br>
+                                <h4>Critérios de avaliação</h4>
+                                <p>Um aspecto importante a ser percebido aqui é que a avaliação não é apenas o envio do arquivo no final, mas, sim, todo o processo de construção das três partes no <b>Fórum de Mentoria</b>. Também é importante ressaltar que, mesmo que a atividade seja realizada em grupos, cada aluno tem um papel fundamental no trabalho e terá uma avaliação individual.  </p>
+                                <p>O que será levado em consideração:</p>
+                                <br>
+                                <img src="img/pg4/infografico_2.png" class="img-fluid d-block m-auto" data-aos="zoom-in" alt="">
+                                <br><br>
+                                <p>Resumindo, a avaliação não focará apenas a entrega final, mas, sim, todo o processo do estágio simulado. Então, sua participação no trabalho coletivo e no <b>Fórum de Mentoria</b> é fundamental!</p>
+                                
+                                <h4>Preparando o voo</h4>
+                                <p>E aí, querido estudante, o que achou das novidades que preparamos para esta terceira etapa? Esperamos que tenha gostado e esteja empolgado para se aproximar cada vez mais da prática do trabalho com a produção cultural. </p>
+                                <p>Aqui, começamos a terceira parte da nossa jornada, sempre juntos, criando a cada passo o nosso caminho.</p>
+                                <p><strong>Preparado para alçar voo?</strong></p>
+                                <p><strong>Voemos! 
+                                </strong></p>
+                                <img src="img/pg4/ilustra_final.png" class="img-fluid d-block m-auto" data-aos="zoom-in" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FIM PG4 -->
+                    
+                    <!-- PG5 -->
+                    <!-- <div class="pagina">
+                        <div class="bloco1-pg5">
+                            <div class="container col-lg-12">
+                                <h2>Referências</h2>
+
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <!-- FIM PG5 -->
+
+        </section>
+        <!-- Paginação do print-->
+        <footer class="pg-footer text-center no-print container-fluid">
+            <ul class="pagination">
+            </ul>
+                <!-- <a href="index.html">            
+                    <div class="tela-inicial"></div>
+                </a> -->
+        </footer>
+    </section>
+
+
+    <!--Jquery-->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- print legado dos técnicos -->
+    <!-- descomentar essa linha caso queira um print.css e um leitor.css exclusivo para o conteudo ao usar o botao imprimir-->
+    <!--
+    -->
+    <script>
+        var custom_print_path = 'assets/print/';
+        var custom_leitor_path = 'assets/print/';
+    </script>    
+    <script src="assets/print/template.config.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/audio-player.js"></script>
+    <script src="assets/interativos/esquema_bru/esquema-bru.js"></script>
+    <script src="assets/js/geral.js"></script>
+    <script src="assets/js/rellax.min.js"></script>
+    <!-- <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/jqueryui-touch-punch.js"></script> -->
+    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/draggable.js"></script> -->
+    <script src="assets/js/html2canvas.min.js"></script>
+    <script src="assets/js/scalable.js"></script>
+    <!-- drag -->
+<!--     
+    <script src='drag/js/dragula.js'></script>
+    <script src="drag/js/game-custom.js"></script> -->
+    <script src="assets/print/print.js"></script>
+    
+    <!--js objeto-->
+    <script src="assets_obj/js/js-olimpiadas-verdadeiro-ou-falso.js"></script>
+    
+    <script>
+        window.addEventListener("load", AOS.refresh);
+    </script>
+    <script>
+        // Adding horizantal parallax scrolling
+        var rellax = new Rellax('.rellax', {
+            // Activate horizantal scrolling
+            // Turned off by default
+            horizontal: false,
+            //Deactivate vertical scrolling
+            vertical: true
+        });
+    </script>
+    <!-- Versao atual do handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
+                window.ht = new HT({
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
+            },
+            document.body.appendChild(scriptElem);
+    </script>
+    
+</body>
+
+</html>
