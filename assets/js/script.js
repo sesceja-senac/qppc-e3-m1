@@ -37,3 +37,12 @@ $('.card-sesc').click(function(){
     }
     
 })
+
+// objeto cartas
+$('.cartaMemoria').click(function(){
+    if($(this).hasClass('flip')){
+        $(this).removeClass('flip')
+    }else{
+        $(this).addClass('flip')
+    }
+})
