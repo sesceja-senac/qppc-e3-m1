@@ -1022,8 +1022,8 @@ div.bloco4-pg3 > div.container{
     .rellax-esquerda-big{
         display: none;
     }
- 
-   
+    .img-pipa{right: 0;}
+    .img-ilustra_5{width: 200px;}
 }
 
 
@@ -1036,6 +1036,7 @@ div.bloco4-pg3 > div.container{
         display: block;
         text-align: center;
     }
+    .img-pipa{max-width: 17%;}
    
 }
 
