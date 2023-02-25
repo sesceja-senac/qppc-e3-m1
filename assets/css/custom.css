@@ -318,6 +318,8 @@ figcaption {
 .caixa.icone.white{
     background-color: #fff;
     color: #004f53;
+    width: 80%;
+    box-shadow: 2px 2px 3px #333;
 }
 .cxmedia{
     max-width: 750px;
@@ -486,7 +488,7 @@ h2 {
     top: 950px;
 }
 .relax-top15 {
-    top: 1550px;
+    bottom: 0;
 }
 .relax-top18 {
     top: 1850px;
@@ -520,9 +522,6 @@ h2 {
     position: relative;
     background-color: #498189;
     padding-bottom: 200px;
-    
-    /* background-image: url('../../img/pg2/bg-branco.png');
-    background-attachment: fixed; */
 }
 .bloco-divisoria{
     margin-top: -125px;
@@ -621,15 +620,20 @@ h2 {
 }
 
 .bloco1-pg4 h2{
-    color: #fff;
+    /* color: #fff; */
 }
 .bloco1-pg4{
     position: relative;
-    color: #fff;
-    padding-top: 100px;
+    padding-top: 0;
     background-image: url('../../img/pg4/background_1.png');
     background-attachment: fixed;
     background-size: cover;
+    
+}
+.bloco1-pg4 .container {
+    background-image: url('../../img/pg4/background_branco.jpg');
+    padding-bottom: 40px;
+    padding-top: 100px;
 }
 .bloco2-pg4{
     position: relative;
@@ -637,6 +641,7 @@ h2 {
     background-attachment: fixed;
     background-size: cover;
     padding-bottom: 100px;
+    padding-top: 5px;
 }
  .bloco1-pg5 .container{padding-bottom: 200px;}
 .bloco5-pg3 {padding-bottom: 35px;}
@@ -675,8 +680,8 @@ div.bloco4-pg3 > div.container{
     background-color: transparent;
 }
 .vamosFazer2{
-    margin-top: -100px !important;
-    margin-bottom: -100px !important;
+    margin-top: 50px;
+    margin-bottom: 100px;
 } 
 .sliderInfinito{
     width: 100%;
@@ -706,16 +711,14 @@ div.bloco4-pg3 > div.container{
     right: 60px;
 }
 
-.img-ilustra2{
-    margin-top: -40px !important;
-}
 .vamosFazerImg{
-    margin-left: -30px !important;
-    margin-top: -20px !important;
+    margin-left: -30px;
+    margin-top: -20px;
 }
 .vamosFazer p, .vamosFazer h6{
     color: #02b1bd !important;
     font-size: 1.2rem !important;
+    margin-top: 20px;
 }
 
 .mgTop{
@@ -799,11 +802,13 @@ div.bloco4-pg3 > div.container{
     height:612px;
     background-image: url('../../img/pg3/mapa.png');
     background-repeat: no-repeat;
+    margin: 40px auto;
 }
 .pin1, .pin2, .pin3, .pin4{
     position: absolute;
     width: 212px;
     height: 105px;
+    cursor: pointer;
 }
 .pin1{ 
     background-image: url('../../img/pg3/pin_1.png'); 
@@ -840,8 +845,8 @@ div.bloco4-pg3 > div.container{
 #nav-tab img{
     max-width: 25%;
 }
-.menu_hamburguinho{
-    
+.painel-abas .nav-link {
+    margin-right: 0;
 }
 .menu_hamburguinho a{
     text-decoration: none;
@@ -885,9 +890,8 @@ div.bloco4-pg3 > div.container{
     margin-top: -100px;
 }
 .img-ilustra_6{
-    position: relative;
-    bottom: 0;
-    margin-bottom: -80px;
+    position: absolute;
+    bottom: 15px;
 }
 
 .modal-body h5{
@@ -998,7 +1002,10 @@ div.bloco4-pg3 > div.container{
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.hidden-lg {
+    display: none;
+}
+.painel-abas-mobile {display: none;}
 @media (max-width: 1680px) {
     
     #bloco-bg-slider{
@@ -1036,8 +1043,8 @@ div.bloco4-pg3 > div.container{
         display: block;
         text-align: center;
     }
-    .img-pipa{max-width: 17%;}
-   
+    .img-pipa{display: none;}
+    .img-pipa01, .img-pipa02, .img-ilustra_6 {display: none;}
 }
 
 @media (max-width: 870px) {
@@ -1080,6 +1087,74 @@ div.bloco4-pg3 > div.container{
         bottom: unset;
         right: unset;
         left: 80px;
+    }
+    .hidden-xs {
+        display: none;
+    }
+    .hidden-lg {
+        display: block;
+    }
+    .ilustra-1 {
+        max-width: 250px;
+        margin: 40px auto;
+    }
+    .bloco1-pg1 > .container {
+        padding-top: 80px;
+    }
+    .vamosFazerImg {
+        margin-right: unset;
+        margin: 20px auto;
+        max-width: 250px;
+        
+    }
+    .vamosFazer2 {
+        margin-bottom: 20px;
+    }
+    .bt_quiz {
+        width: 100%;
+        background-size: contain;
+    }
+    .bloco1-pg2 {
+        padding-bottom: 50px;
+    }
+
+    .icone.seLiga::before {
+        margin-top: -50px;
+        margin-left: 44%;
+    }
+    .caixa.seLiga {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 100px;
+    }
+    .modal-body .painel-abas {
+        display: none;
+    }
+    .painel-abas-mobile {
+        display: block;
+        margin-bottom: 100px;
+    }
+    .painel-abas-mobile div {
+        background-image: url('../../img/pg2/background.jpg');
+        padding: 5px 15px;
+        border: 1px solid #333;
+        margin-bottom: 10px;
+    }
+    .painel-abas-mobile h4 {
+        color: black;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .mapa_voo {
+        background-position: center;
+    }
+    .modal-body .col-2 img {
+        width: 50px;
+    }
+    .bloco2-pg4 {
+        background-color: #498189;
+        background-image: unset;
+        color: white;
     }
 }
 .pg-footer a:visited {
