@@ -1022,13 +1022,14 @@ div.bloco4-pg3 > div.container{
 .esquema-p1{
     position: absolute;
     top: 10px;
-    left: 200px;
+    left: 205px;
 }
 .esquema-p2{
     position: absolute;
     top: 10px;
     right: 196px;
 }
+.esquema-p2 p{margin-left: 10px;}
 .esquema-p3{
     position: absolute;
     top: 200px;
