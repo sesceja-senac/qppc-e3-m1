@@ -1029,11 +1029,13 @@ div.bloco4-pg3 > div.container{
     top: 10px;
     right: 196px;
 }
-.esquema-p2 p{margin-left: 10px;}
+.esquema-p1 p{    margin-left: 5px;}
+.esquema-p2 p{margin-left: 15px;}
+.esquema-p3 p{margin-left: 15px;}
 .esquema-p3{
     position: absolute;
     top: 200px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 .esquema-p4{
     position: absolute;
@@ -1042,7 +1044,7 @@ div.bloco4-pg3 > div.container{
 }
 .esquema-p5{
     position: absolute;
-    top: 454px;
+    top: 450px;
     left: 332px;
 }
 
