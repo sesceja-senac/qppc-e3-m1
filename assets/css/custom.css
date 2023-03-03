@@ -1006,6 +1006,86 @@ div.bloco4-pg3 > div.container{
     display: none;
 }
 .painel-abas-mobile {display: none;}
+.box-esquema-cheio{
+    position: relative;
+}
+.esquema-p1, .esquema-p2, .esquema-p3, .esquema-p4, .esquema-p5{
+   width: 233px;
+   height: 172px;
+   color: #fff; 
+}
+
+.box-esquema-cheio p{
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+.esquema-p1{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+.esquema-p2{
+    position: absolute;
+    top: 10px;
+    right: 196px;
+}
+.esquema-p3{
+    position: absolute;
+    top: 200px;
+    padding: 0 20px;
+}
+.esquema-p4{
+    position: absolute;
+    top: 200px;
+    right: 0px;
+}
+.esquema-p5{
+    position: absolute;
+    top: 454px;
+    left: 332px;
+}
+
+.esquema-entrega1{
+    color: #fff;
+    position: absolute;
+    top: 185px;
+    left: 265px;
+    padding-top: 0px !important;
+}
+.esquema-entrega2{
+    color: #fff;
+    position: absolute;
+    top: 185px;
+    right: 260px;
+    padding-top: 0px !important;
+}
+.esquema-entrega3{
+    color: #fff;
+    position: absolute;
+    top: 372px;
+    left: 70px;
+    padding-top: 0px !important;
+}
+.esquema-entrega4{
+    color: #fff;
+    position: absolute;
+    top: 374px;
+    right: 67px;
+    padding-top: 0px !important;
+}
+.esquema-entrega5{
+    color: #fff;
+    position: absolute;
+    top: 573px;
+    left: 400px;
+    padding-top: 0px !important;
+}
+.esquema-h,  .esquema-entrega{
+    text-align: center;
+}
+.diagramaCheio2{
+    display: none;
+}
 @media (max-width: 1680px) {
     
     #bloco-bg-slider{
@@ -1035,6 +1115,67 @@ div.bloco4-pg3 > div.container{
 
 
 @media (max-width: 990px) {
+    .box-esquema-cheio{
+        width: 301px;
+        margin: 0 auto;
+    }
+    .esquema-p1{
+        top: 16px;
+        left: -3px;
+        right: 0;
+        margin: auto;
+        width: 278px;
+    }
+    .esquema-entrega1{
+        left: 106px;
+        top: 200px;
+    }
+    .esquema-p2 { 
+        top: 297px;
+        left: 10px;
+    }
+    .esquema-p3{
+        top: 497px;
+        left: -14px;
+        width: 330px;
+    }
+     .esquema-p4{
+        top: 701px;
+        left: 10px;
+        width: 330px;
+     }
+     .esquema-p5{
+        top: 904px;
+        left: 10px;
+        width: 285px;
+    }
+    .esquema-p2 .esquema-h{ width: 100px;}
+
+    .esquema-entrega2 {
+        top: 412px;
+        left: 30px;
+        width: 100px;
+    }
+    .esquema-entrega3 {
+        top: 614px;
+        left: 30px;
+    }
+    .esquema-entrega4 {
+        top: 818px;
+        left: 30px;
+    }
+    .esquema-entrega5 {
+        top: 1020px;
+        left: 30px;
+    }
+    div.esquema-p1 .esquema-h{
+        text-align: center;
+    }
+    .esquema-h:nth-child(1){
+        text-align: left;
+    }
+    .diagramaCheio1{ display:none ;}
+    .diagramaCheio2{display: block; margin: 0 auto;}
     #topo img{ display: none;}
 
     .video-box img, .video-box iframe{
